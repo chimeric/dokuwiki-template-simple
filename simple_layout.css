@@ -1,0 +1,54 @@
+/**
+ * additional layout style for the simple template
+ *
+ * @author:     Michael Klier <chi@chimeric.de>
+ * @homepage:   http://www.chimeric.de
+ */
+
+div.dokuwiki .stylehead {
+  background: __medium__ url(images/bg.jpg) repeat-x;
+  border-bottom: 1px solid __light__;
+  padding-top:1.6em;
+  float:left;
+  width:100%;
+}
+
+div.dokuwiki .header {
+  padding:0;
+  margin:0;
+}
+
+div.dokuwiki .pagename {
+  font-weight:bold;
+  color: __light__;
+  margin-left: 0.2em;
+  line-height:120%;
+  font-size:140%;
+}
+
+div.dokuwiki .logo {
+  margin-top:0.1em;
+  margin-right:0.1em;
+  font-size:350%;
+}
+
+div.dokuwiki .pagename a {
+  color: __lightgray__ !important;
+}
+
+div.dokuwiki .logo a {
+  color: __lightgray__ !important;
+}
+
+div.dokuwiki .bar {
+  border:none;
+  background: __medium__;
+  margin:0;
+  padding:0;
+  margin-top:1em;
+}
+
+div.dokuwiki #bar__bottom {
+  border-top: 1px dashed __light__;
+  background: none;
+}

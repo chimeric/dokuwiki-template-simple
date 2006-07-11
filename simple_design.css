@@ -1,0 +1,208 @@
+/**
+ * additional design fot the simple template
+ *
+ * @author:     Michael Klier <chi@chimeric.de>
+ * @homepage:   http://www.chimeric.de
+ */
+
+body {
+  background: __white__ url(images/dwbg.jpg) repeat-x;
+  padding:1em;
+  padding-top:1.2em;
+}
+
+div.dokuwiki {
+  width:100%;
+  font-family: Tahoma, sans-serif;
+  font-size: 1em;
+  color: __darkgray__;
+  line-height: 160%;
+}
+
+div.dokuwiki div.page {
+  width: __page_width__;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 1.5em;
+  margin-top:2em;
+}
+
+/* ---------------- Top Navigation -------------------- */
+
+div.dokuwiki div#tpl_simple_navi_container {
+  margin-left:auto;
+  margin-right:auto;
+  width:__page_width__;
+  height:2.2em;
+}
+
+div.dokuwiki div#tpl_simple_navi {
+  position:absolute;
+  padding-left:0.2em;
+  padding-right:0.2em;
+}
+
+div.dokuwiki div#tpl_simple_navi ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+div.dokuwiki div#tpl_simple_navi li.level1 {
+  margin-right:0.2em;
+  float:left;
+}
+
+div.dokuwiki div#tpl_simple_navi li.level1,
+div.dokuwiki div#tpl_simple_navi li.level2,
+div.dokuwiki div#tpl_simple_navi li.level3 {
+  line-height: 140%;
+}
+
+div.dokuwiki div#tpl_simple_navi div.li {
+  background-color: __lightgray__;
+}
+
+div.dokuwiki div#tpl_simple_navi div.li:hover {
+  background-color: __lighter__;
+}
+
+div.dokuwiki div#tpl_simple_navi li.level1 div.li {
+  width:11em;
+  border:1px solid __light__;
+  border-bottom:none;
+}
+
+div.dokuwiki div#tpl_simple_navi li.level2 div.li {
+  border:1px solid __light__;
+}
+
+div.dokuwiki div#tpl_simple_navi div.li a {
+  padding:0.5em;
+  display:block;
+  text-decoration:none;
+  background-image:none;
+}
+
+div.dokuwiki div#tpl_simple_navi ul li.level1 ul,
+div.dokuwiki div#tpl_simple_navi ul li.level1 ul li.level2 ul {
+  display:none;
+}
+
+div.dokuwiki div#tpl_simple_navi ul li.level1:hover ul,
+div.dokuwiki div#tpl_simple_navi ul li.level1 ul li.level2:hover ul {
+  display:block;
+}
+
+div.dokuwiki div#tpl_simple_navi ul li.level1 ul li.level2:hover ul {
+  position:relative;
+  left:9.5em;
+  top:-2em;
+}
+
+div.dokuwiki .navi_clearer {
+  clear:both;
+  margin-bottom:1.8em;
+}
+
+/* the searchform */
+div.dokuwiki #dw__search {
+  position:absolute;
+  right:2em;
+  top:12em;
+  margin-right:0.5em;
+}
+
+div.dokuwiki div.ajax_qsearch {
+  right:240px;
+  z-index:99;
+}
+
+/* general headline setup */
+div.dokuwiki h1,
+div.dokuwiki h2,
+div.dokuwiki h3,
+div.dokuwiki h4,
+div.dokuwiki h5 {
+  border:none;
+  font-weight:normal;
+}
+
+div.dokuwiki h1 a,
+div.dokuwiki h2 a,
+div.dokuwiki h3 a,
+div.dokuwiki h4 a,
+div.dokuwiki h5 a,
+div.dokuwiki a.nolink {
+  color: __darker__ !important;
+}
+
+/* special headlines */
+div.dokuwiki h1 {font-size: 200%; margin-left: 0px;}
+div.dokuwiki h2 {font-size: 180%; margin-left: 10px;}
+div.dokuwiki h3 {font-size: 160%; margin-left: 20px; font-weight: normal;}
+div.dokuwiki h4 {font-size: 140%; margin-left: 35px; font-weight: bold;}
+div.dokuwiki h5 {font-size: 130%; margin-left: 50px; font-weight: bold;}
+
+/* indent different sections */
+div.dokuwiki div.level1 {margin-left: 3px;}
+div.dokuwiki div.level2 {margin-left: 13px;}
+div.dokuwiki div.level3 {margin-left: 23px;}
+div.dokuwiki div.level4 {margin-left: 38px;}
+div.dokuwiki div.level5 {margin-left: 53px;}
+
+div.dokuwiki ul div.li ,
+div.dokuwiki ol div.li {
+  color: __darkgray__;
+}
+
+div.dokuwiki pre {
+  border-color: __mediumgray__;
+}
+
+div.dokuwiki table.inline th {
+  background-color: __mediumgray__;
+  border-color: __darkgray__;
+  color: __white__;
+}
+
+div.dokuwiki table.inline td {
+  border-color: __darkgray__;
+}
+
+/* ---------- table of contents ------------------- */
+
+div.dokuwiki div.tocheader {
+  border:1px solid __light__;
+  background-color: __white__;
+  color: __darkgray__;
+}
+
+div.dokuwiki #toc__inside {
+  border:1px solid __light__;
+}
+
+div.dokuwiki div.breadcrumbs {
+  font-size:90%;
+  color:__darker__;
+  margin:0;
+  margin-bottom:0.5em;
+  background: __lightgray__;
+  border-bottom:1px solid __light__;
+}
+
+div.dokuwiki div.breadcrumbs a {
+  /*color: __lightgray__;*/
+}
+
+
+/* code blocks by file tag */
+div.dokuwiki pre.file {
+  background-color: __lightgray__;
+}
+
+/* ------------------ Additional ---------------------- */
+div.footerinc {
+    margin-top:2em;
+    text-align: center;
+}
