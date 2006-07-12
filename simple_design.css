@@ -33,78 +33,68 @@ div.dokuwiki div#tpl_simple_navi_container {
   margin-left:auto;
   margin-right:auto;
   width:__page_width__;
-  height:2.2em;
 }
 
 div.dokuwiki div#tpl_simple_navi {
-  position:absolute;
-  padding-left:0.2em;
-  padding-right:0.2em;
+  float:left;
 }
 
 div.dokuwiki div#tpl_simple_navi ul {
   list-style:none;
   margin:0;
   padding:0;
-}
-
-div.dokuwiki div#tpl_simple_navi li.level1 {
-  margin-right:0.2em;
+  width:11em;
   float:left;
 }
 
-div.dokuwiki div#tpl_simple_navi li.level1,
-div.dokuwiki div#tpl_simple_navi li.level2,
-div.dokuwiki div#tpl_simple_navi li.level3 {
-  line-height: 140%;
-}
-
-div.dokuwiki div#tpl_simple_navi div.li {
-  background-color: __lightgray__;
-}
-
-div.dokuwiki div#tpl_simple_navi div.li:hover {
-  background-color: __lighter__;
-}
-
-div.dokuwiki div#tpl_simple_navi li.level1 div.li {
-  width:11em;
-  border:1px solid __light__;
-  border-bottom:none;
-}
-
-div.dokuwiki div#tpl_simple_navi li.level2 div.li {
-  border:1px solid __light__;
-}
-
-div.dokuwiki div#tpl_simple_navi div.li a {
-  padding:0.5em;
+div.dokuwiki div#tpl_simple_navi a {
   display:block;
+  padding:0.5em;
   text-decoration:none;
-  background-image:none;
+  background-color: __lightgray__;
+  border:1px solid __light__;
+  margin-top:0.1em;
+  margin-right:0.1em;
 }
 
-div.dokuwiki div#tpl_simple_navi ul li.level1 ul,
-div.dokuwiki div#tpl_simple_navi ul li.level1 ul li.level2 ul {
+div.dokuwiki div#tpl_simple_navi a:hover {
+  background-color: __light__;
+}
+
+div.dokuwiki div#tpl_simple_navi li {
+  margin:0;
+  padding:0;
+  position:relative;
+}
+
+div.dokuwiki div#tpl_simple_navi ul ul {
+  border:none;
+  position:absolute;
+  z-index:500;
+}
+
+div.dokuwiki div#tpl_simple_navi ul ul ul {
+  top:0;
+  left:100%;
+}
+
+div.dokuwiki div#tpl_simple_navi ul ul,
+div.dokuwiki div#tpl_simple_navi ul li:hover ul ul,
+div.dokuwiki div#tpl_simple_navi ul ul li:hover ul ul {
   display:none;
 }
 
-div.dokuwiki div#tpl_simple_navi ul li.level1:hover ul,
-div.dokuwiki div#tpl_simple_navi ul li.level1 ul li.level2:hover ul {
+div.dokuwiki div#tpl_simple_navi ul li:hover ul,
+div.dokuwiki div#tpl_simple_navi ul ul li:hover ul,
+div.dokuwiki div#tpl_simple_navi ul ul ul li:hover ul {
   display:block;
-}
-
-div.dokuwiki div#tpl_simple_navi ul li.level1 ul li.level2:hover ul {
-  position:relative;
-  left:9.5em;
-  top:-2em;
 }
 
 div.dokuwiki .navi_clearer {
   clear:both;
   margin-bottom:1.8em;
 }
-
+*/
 /* the searchform */
 div.dokuwiki #dw__search {
   position:absolute;
