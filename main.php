@@ -38,14 +38,14 @@
 
   <div class="stylehead">
 
-    <div class="header">
+    <?php if($conf['breadcrumbs']){?>
+    <div class="breadcrumbs">
+      <?php tpl_breadcrumbs()?>
+      <?php //tpl_youarehere() //(some people prefer this)?>
+    </div>
+    <?php }?>
 
-      <?php if($conf['breadcrumbs']){?>
-      <div class="breadcrumbs">
-        <?php tpl_breadcrumbs()?>
-        <?php //tpl_youarehere() //(some people prefer this)?>
-      </div>
-      <?php }?>
+    <div class="header">
 
       <?php if($conf['youarehere']){?>
       <div class="breadcrumbs">
@@ -53,23 +53,19 @@
       </div>
       <?php }?>
 
-      <div class="pagename">
-        [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>]]
-      </div>
+      <?php tpl_searchform()?>
+
       <div class="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
 
-      <?php tpl_searchform()?>
 
-    </div>
-
-    <div class="navi_clearer"></div>
-
-    <div id="tpl_simple_navi_container">
       <div id="tpl_simple_navi">
         <?php tpl_topbar() ?>
       </div>
+
+      <div class="clearer"></div>
+
     </div>
 
   </div>
