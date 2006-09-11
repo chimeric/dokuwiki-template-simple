@@ -76,6 +76,11 @@
 
 
   <div class="page">
+
+    <div class="pagename">
+      [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>]]
+    </div>
+
     <!-- wikipage start -->
     <?php tpl_content()?>
     <!-- wikipage stop -->
