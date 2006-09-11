@@ -53,12 +53,9 @@
       </div>
       <?php }?>
 
-      <?php tpl_searchform()?>
-
       <div class="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
-
 
       <div id="tpl_simple_navi">
         <?php tpl_topbar() ?>
@@ -74,12 +71,13 @@
 
   <div class="clearer"></div>
 
-
   <div class="page">
 
     <div class="pagename">
       [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>]]
     </div>
+
+    <?php tpl_searchform()?>
 
     <!-- wikipage start -->
     <?php tpl_content()?>
