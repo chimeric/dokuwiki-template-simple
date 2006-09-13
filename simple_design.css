@@ -24,34 +24,36 @@ div.dokuwiki {
 
 div.dokuwiki div.page {
   margin-top:2em;
+  padding: 0.1em;
 }
 
 /* ---------------- Top Navigation -------------------- */
 div.dokuwiki div#tpl_simple_navi {
-  height: 20px;
+  height: 21px;
+  padding-left: 1px;
+  background-color: __light__;
 }
 
 div.dokuwiki div#tpl_simple_navi ul {
   list-style:none;
   margin:0;
   padding:0;
-  width:147px;
+  width:148px;
   float:left;
 }
 
 div.dokuwiki div#tpl_simple_navi a {
   display:block;
-  padding-left: 0.2em;
-  padding-top: 0.1em;
   text-decoration:none;
   background-color: __lightgray__;
   border:1px solid __light__;
-  margin-right:0.1em;
-  margin-top: 0.1em;
+  border-top: none;
+  margin-right:1px;
+  padding-left: 0.3em;
 }
 
 div.dokuwiki div#tpl_simple_navi a:hover {
-  background-color: __light__;
+  background-color: __white__;
 }
 
 div.dokuwiki div#tpl_simple_navi li {
@@ -99,8 +101,8 @@ div.dokuwiki #dw__search input.button {
 }
 
 div.dokuwiki div.ajax_qsearch {
-  top: 50px;
-  right:75px;
+  top: 245px;
+  right: 140px;
   z-index:99;
 }
 
@@ -187,6 +189,40 @@ div.dokuwiki pre.file {
 
 /* ------------------ Additional ---------------------- */
 div.footerinc {
-    margin-top:2em;
-    text-align: center;
+  margin-top:2em;
+  text-align: center;
+}
+
+/* ---------------- Nifty Corners -------------------- */
+div.dokuwiki .rtop, .rbottom{display:block;}
+div.dokuwiki .rtop *, .rbottom *{display: block; height: 1px; overflow: hidden;}
+
+div.dokuwiki .r1{margin: 0 5px;}
+div.dokuwiki .r2{margin: 0 3px;}
+div.dokuwiki .r3{margin: 0 2px;}
+div.dokuwiki .r4{margin: 0 1px; height: 2px;}
+
+div.dokuwiki #breadcrumbs_container .r1,
+div.dokuwiki #breadcrumbs_container .r2,
+div.dokuwiki #breadcrumbs_container .r3,
+div.dokuwiki #breadcrumbs_container .r4 {
+  background: __light__;
+}
+
+div.dokuwiki #header_container .r1,
+div.dokuwiki #header_container .r2,
+div.dokuwiki #header_container .r3,
+div.dokuwiki #header_container .r4 {
+  background: __medium__;
+}
+
+div.dokuwiki #navi_container {
+  margin-top: 1em;
+}
+
+div.dokuwiki #navi_container .r1,
+div.dokuwiki #navi_container .r2,
+div.dokuwiki #navi_container .r3,
+div.dokuwiki #navi_container .r4 {
+  background: __light__;
 }

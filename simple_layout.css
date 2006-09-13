@@ -5,29 +5,25 @@
  * @homepage:   http://www.chimeric.de
  */
 
-div.dokuwiki .stylehead {
-  background: __medium__;
-}
-
 div.dokuwiki .header {
-  padding: 0.3em;
-  padding-top: 0.1em;
-  padding-bottom: 0;
-  padding-right: 0.2em;
+  padding: 0;
+  background: __medium__;
 }
 
 div.dokuwiki .pagename {
   font-weight:bold;
   color: __darker__;
   font-size: 130%;
-  margin-bottom: 1em;
 }
 
 div.dokuwiki .logo {
   background: __medium__;
+  float: none;
   text-align: center;
-  width: 100%;
-  padding-top: 1.3em;
+  height: 50px;
+  padding-top: 1.5em !important;
+  padding-bottom: 0.4em !important;
+  padding-top: 1em;
   padding-bottom: 1.5em;
 }
 
@@ -37,6 +33,8 @@ div.dokuwiki .pagename a {
 
 div.dokuwiki .logo a {
   color: __lightgray__ !important;
+  font-weight: normal;
+  font-size: 160%;
 }
 
 div.dokuwiki .bar {

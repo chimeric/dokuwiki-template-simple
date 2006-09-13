@@ -38,44 +38,47 @@
 
   <div class="stylehead">
 
-    <?php if($conf['breadcrumbs']){?>
-    <div class="breadcrumbs">
-      <?php tpl_breadcrumbs()?>
-      <?php //tpl_youarehere() //(some people prefer this)?>
+    <div id="header_container">
+      <b class="rtop">
+        <b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b>
+      </b>
+      <div class="header">
+        <div class="logo">
+          <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
+        </div>
+      </div>
+      <b class="rbottom">
+        <b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
+      </b>
     </div>
-    <?php }?>
 
-    <div class="header">
+    <div id="navi_container">
+      <b class="rtop">
+        <b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b>
+      </b>
+      <?php if($conf['breadcrumbs']){?>
+      <div class="breadcrumbs">
+        <?php tpl_breadcrumbs()?>
+        <?php //tpl_youarehere() //(some people prefer this)?>
+      </div>
+      <?php }?>
 
       <?php if($conf['youarehere']){?>
       <div class="breadcrumbs">
         <?php tpl_youarehere() ?>
       </div>
       <?php }?>
-
-      <div class="logo">
-        <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
-      </div>
-
       <div id="tpl_simple_navi">
-        <?php tpl_topbar() ?>
+      <?php tpl_topbar() ?>
       </div>
-
-      <div class="clearer"></div>
-
     </div>
 
   </div>
 
   <?php flush()?>
 
-  <div class="clearer"></div>
 
   <div class="page">
-
-    <div class="pagename">
-      [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>]]
-    </div>
 
     <?php tpl_searchform()?>
 
