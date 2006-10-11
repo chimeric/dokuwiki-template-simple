@@ -172,10 +172,11 @@ div.dokuwiki div.breadcrumbs {
   background: __navi_background__;
 }
 
-/* code blocks by file tag */
-div.dokuwiki pre.file {
-  background-color: __lightgray__;
+div.dokuwiki pre {
+  font-size: 120% !important;
+  font-size: 100%;
 }
+
 
 /* --------------------- footnotes -------------------------------- */
 div.dokuwiki div.fn {
