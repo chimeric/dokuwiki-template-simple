@@ -143,6 +143,13 @@ div.dokuwiki table.inline th {
   color: __text_alt__;
 }
 
+/* ---------- links ------------------------------- */
+
+div.dokuwiki .bar a.action {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
 /* ---------- table of contents ------------------- */
 
 div.dokuwiki div.tocheader {

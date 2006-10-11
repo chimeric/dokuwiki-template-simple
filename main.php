@@ -106,20 +106,16 @@ include(DOKU_TPLINC.'tpl_functions.php');
 
         <div class="bar" id="bar__bottom">
           <div class="bar-left" id="bar__bottomleft">
-            <?php if(auth_quickaclcheck($ID) > READ) { ?>
-              <?php if(tpl_actionlink('edit')) print " &middot; "?>
-            <?php }?>
+            <?php tpl_actionlink('edit')?>
             <?php tpl_actionlink('recent')?>
           </div>
           <div class="bar-right" id="bar__bottomright">
-            <?php if(auth_quickaclcheck($ID) > READ) { ?>
-              <?php if(tpl_actionlink('history')) print " &middot; "?>
-            <?php }?>
-            <?php if(tpl_actionlink('subscription')) print " &middot; "?>
-            <?php if(tpl_actionlink('admin')) print " &middot; "?>
-            <?php if(tpl_actionlink('profile')) print " &middot; "?>
-            <?php if(tpl_actionlink('login')) print " &middot; "?>
-            <?php if(tpl_actionlink('index')) print " &middot; "?>
+            <?php tpl_actionlink('subscription')?>
+            <?php tpl_actionlink('history')?>
+            <?php tpl_actionlink('admin')?>
+            <?php tpl_actionlink('profile')?>
+            <?php tpl_actionlink('login')?>
+            <?php tpl_actionlink('index')?>
             <?php tpl_actionlink('top')?>
           </div>
           <div class="clearer"></div>
