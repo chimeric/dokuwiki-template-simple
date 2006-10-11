@@ -13,7 +13,10 @@
  * @link   http://wiki.splitbrain.org/wiki:tpl:templates
  * @author Andreas Gohr <andi@splitbrain.org>
  */
- include(DOKU_TPLINC.'tpl_functions.php');
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
+include(DOKU_TPLINC.'tpl_functions.php');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang']?>"
  lang="<?php echo $conf['lang']?>" dir="<?php echo $lang['direction']?>">
@@ -131,6 +134,6 @@
 
 </div>
 
-<div class="no"><?php tpl_indexerWebBug()?></div>
+<div class="no"><?php /* provide DokuWiki housekeeping, required in all templates */ tpl_indexerWebBug()?></div>
 </body>
 </html>
