@@ -108,6 +108,7 @@ include(DOKU_TPLINC.'tpl_functions.php');
           <div class="bar-left" id="bar__bottomleft">
             <?php tpl_actionlink('edit')?>
             <?php tpl_actionlink('recent')?>
+            <?php tpl_actionlink('backlink')?>
           </div>
           <div class="bar-right" id="bar__bottomright">
             <?php tpl_actionlink('subscription')?>
