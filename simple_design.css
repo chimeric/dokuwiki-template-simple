@@ -170,6 +170,11 @@ div.dokuwiki pre.file {
   background-color: __lightgray__;
 }
 
+/* --------------------- footnotes -------------------------------- */
+div.dokuwiki div.fn {
+  font-size: 80%;
+}
+
 /* ------------------ Additional ---------------------- */
 div.footerinc {
   margin-top: 2em;
