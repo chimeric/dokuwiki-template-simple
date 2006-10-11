@@ -7,23 +7,22 @@
 
 body {
   background: __white__ url(images/dwbg.jpg) repeat-x;
-  padding:1em;
-  padding-top:1.2em;
+  padding: 1em;
+  padding-top: 1.2em;
+  font-family: Tahoma, sans-serif;
+  font-size: __font_size__;
 }
 
 div.dokuwiki {
   width:100%;
-  font-family: Tahoma, sans-serif;
-  font-size: 1em;
-  color: __darkgray__;
   line-height: 160%;
-  width: __page_width__;
-  margin-left:auto;
-  margin-right:auto;
+  width: 741px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.dokuwiki div.page {
-  margin-top:2em;
+  margin-top: 2em;
   padding: 0.1em;
 }
 
@@ -31,63 +30,63 @@ div.dokuwiki div.page {
 div.dokuwiki div#tpl_simple_navi {
   height: 21px;
   padding-left: 1px;
-  background-color: __light__;
+  background-color: __navi_background__;
 }
 
 div.dokuwiki div#tpl_simple_navi ul {
-  list-style:none;
-  margin:0;
-  padding:0;
-  width:148px;
-  float:left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 148px;
+  float: left;
 }
 
 div.dokuwiki div#tpl_simple_navi a {
-  display:block;
-  text-decoration:none;
-  background-color: __lightgray__;
-  border:1px solid __light__;
+  display: block;
+  text-decoration: none;
+  background-color: __background_neu__;
+  border: 1px solid __navi_background__;
   border-top: none;
-  margin-right:1px;
+  margin-right: 1px;
   padding-left: 0.3em;
 }
 
 div.dokuwiki div#tpl_simple_navi a:hover {
-  background-color: __white__;
+  background-color: __background_alt__;
 }
 
 div.dokuwiki div#tpl_simple_navi li {
-  margin:0;
-  padding:0;
-  position:relative;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 div.dokuwiki div#tpl_simple_navi ul ul {
-  border:none;
-  position:absolute;
-  z-index:500;
+  border: none;
+  position: absolute;
+  z-index: 500;
 }
 
 div.dokuwiki div#tpl_simple_navi ul ul ul {
-  top:0;
-  left:100%;
+  top: 0;
+  left: 100%;
 }
 
 div.dokuwiki div#tpl_simple_navi ul ul,
 div.dokuwiki div#tpl_simple_navi ul li:hover ul ul,
 div.dokuwiki div#tpl_simple_navi ul ul li:hover ul ul {
-  display:none;
+  display: none;
 }
 
 div.dokuwiki div#tpl_simple_navi ul li:hover ul,
 div.dokuwiki div#tpl_simple_navi ul ul li:hover ul,
 div.dokuwiki div#tpl_simple_navi ul ul ul li:hover ul {
-  display:block;
+  display: block;
 }
 
 div.dokuwiki .navi_clearer {
-  clear:both;
-  margin-bottom:1.8em;
+  clear: both;
+  margin-bottom: 1.8em;
 }
 
 /* the searchform */
@@ -103,7 +102,7 @@ div.dokuwiki #dw__search input.button {
 div.dokuwiki div.ajax_qsearch {
   top: 245px;
   right: 140px;
-  z-index:99;
+  z-index: 99;
 }
 
 /* general headline setup */
@@ -112,8 +111,8 @@ div.dokuwiki h2,
 div.dokuwiki h3,
 div.dokuwiki h4,
 div.dokuwiki h5 {
-  border:none;
-  font-weight:normal;
+  border: none;
+  font-weight: normal;
 }
 
 div.dokuwiki h1 a,
@@ -122,13 +121,13 @@ div.dokuwiki h3 a,
 div.dokuwiki h4 a,
 div.dokuwiki h5 a,
 div.dokuwiki a.nolink {
-  color: __darker__ !important;
+  color: __headline_color__ !important;
 }
 
 /* special headlines */
-div.dokuwiki h1 {font-size: 200%; margin-left: 0px;}
-div.dokuwiki h2 {font-size: 180%; margin-left: 10px;}
-div.dokuwiki h3 {font-size: 160%; margin-left: 20px; font-weight: normal;}
+div.dokuwiki h1 {font-size: 180%; margin-left: 0px;}
+div.dokuwiki h2 {font-size: 160%; margin-left: 10px;}
+div.dokuwiki h3 {font-size: 150%; margin-left: 20px;}
 div.dokuwiki h4 {font-size: 140%; margin-left: 35px; font-weight: bold;}
 div.dokuwiki h5 {font-size: 130%; margin-left: 50px; font-weight: bold;}
 
@@ -139,48 +138,28 @@ div.dokuwiki div.level3 {margin-left: 23px;}
 div.dokuwiki div.level4 {margin-left: 38px;}
 div.dokuwiki div.level5 {margin-left: 53px;}
 
-div.dokuwiki ul div.li ,
-div.dokuwiki ol div.li {
-  color: __darkgray__;
-}
-
-div.dokuwiki pre {
-  border-color: __mediumgray__;
-  font-size: 100%;
-}
-
 div.dokuwiki table.inline th {
-  background-color: __mediumgray__;
-  border-color: __darkgray__;
-  color: __white__;
-}
-
-div.dokuwiki table.inline td {
-  border-color: __darkgray__;
+  background-color: __background_alt__;
+  color: __text_alt__;
 }
 
 /* ---------- table of contents ------------------- */
 
 div.dokuwiki div.tocheader {
-  border:1px solid __light__;
-  background-color: __white__;
-  color: __darkgray__;
+  border: 1px solid __border__;
+  background-color: __background_neu__;
+  color: __text_alt__;
 }
 
 div.dokuwiki #toc__inside {
-  border:1px solid __light__;
+  border: 1px solid __border__;
+  background-color: __background_neu__;
 }
 
 div.dokuwiki div.breadcrumbs {
-  font-size:85%;
-  color:__darker__;
-  background: __light__;
+  color: __darker__;
+  background: __navi_background__;
 }
-
-div.dokuwiki div.breadcrumbs a {
-  /*color: __lightgray__;*/
-}
-
 
 /* code blocks by file tag */
 div.dokuwiki pre.file {
@@ -189,12 +168,12 @@ div.dokuwiki pre.file {
 
 /* ------------------ Additional ---------------------- */
 div.footerinc {
-  margin-top:2em;
+  margin-top: 2em;
   text-align: center;
 }
 
 /* ---------------- Nifty Corners -------------------- */
-div.dokuwiki .rtop, .rbottom{display:block;}
+div.dokuwiki .rtop, .rbottom {display:block;}
 div.dokuwiki .rtop *, .rbottom *{display: block; height: 1px; overflow: hidden;}
 
 div.dokuwiki .r1{margin: 0 5px;}
@@ -206,14 +185,14 @@ div.dokuwiki #breadcrumbs_container .r1,
 div.dokuwiki #breadcrumbs_container .r2,
 div.dokuwiki #breadcrumbs_container .r3,
 div.dokuwiki #breadcrumbs_container .r4 {
-  background: __light__;
+  background: __navi_background__;
 }
 
 div.dokuwiki #header_container .r1,
 div.dokuwiki #header_container .r2,
 div.dokuwiki #header_container .r3,
 div.dokuwiki #header_container .r4 {
-  background: __medium__;
+  background: __header_background__;
 }
 
 div.dokuwiki #navi_container {
@@ -224,5 +203,5 @@ div.dokuwiki #navi_container .r1,
 div.dokuwiki #navi_container .r2,
 div.dokuwiki #navi_container .r3,
 div.dokuwiki #navi_container .r4 {
-  background: __light__;
+  background: __navi_background__;
 }

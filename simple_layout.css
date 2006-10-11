@@ -7,17 +7,17 @@
 
 div.dokuwiki .header {
   padding: 0;
-  background: __medium__;
+  background: __header_background__;
 }
 
 div.dokuwiki .pagename {
-  font-weight:bold;
+  font-weight: bold;
   color: __darker__;
   font-size: 130%;
 }
 
 div.dokuwiki .logo {
-  background: __medium__;
+  background: __heaader_background__;
   float: none;
   text-align: center;
   height: 50px;
@@ -38,11 +38,11 @@ div.dokuwiki .logo a {
 }
 
 div.dokuwiki .bar {
-  border:none;
+  border: none;
   background: __medium__;
-  margin:0;
-  padding:0;
-  margin-top:1em;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
 }
 
 div.dokuwiki #bar__bottom {
