@@ -151,6 +151,10 @@ div.dokuwiki div.tocheader {
   color: __text_alt__;
 }
 
+div.dokuwiki div.tocheader img {
+  margin-top: 0.6em;
+}
+
 div.dokuwiki #toc__inside {
   border: 1px solid __border__;
   background-color: __background_neu__;
