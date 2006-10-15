@@ -51,6 +51,13 @@ div.dokuwiki div#tpl_simple_navi a {
   padding-left: 0.3em;
 }
 
+div.dokuwiki div#tpl_simple_navi a.urlextern,
+div.dokuwiki div#tpl_simple_navi a.interwiki {
+  padding: 0;
+  padding-left: 0.3em;
+  background-image: none;
+}
+
 div.dokuwiki div#tpl_simple_navi a:hover {
   background-color: __background_alt__;
 }
