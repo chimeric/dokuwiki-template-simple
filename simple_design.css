@@ -158,19 +158,21 @@ div.dokuwiki .bar a.action {
 }
 
 /* ---------- table of contents ------------------- */
+div.dokuwiki div.toc {
+  margin-left: 1em;
+}
 
 div.dokuwiki div.tocheader {
-  border: 1px solid __border__;
   background-color: __background_neu__;
   color: __text_alt__;
+  line-height: 100%;
 }
 
 div.dokuwiki div.tocheader img {
-  margin-top: 0.6em;
+  margin-top: 0.1em;
 }
 
 div.dokuwiki #toc__inside {
-  border: 1px solid __border__;
   background-color: __background_neu__;
 }
 
