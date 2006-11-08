@@ -157,6 +157,11 @@ div.dokuwiki .bar a.action {
   margin-right: 0.3em;
 }
 
+/* external link */
+div.dokuwiki a.urlextern {
+  background: transparent url(images/urlextern.png) 0px 1px no-repeat;
+}
+
 /* ---------- table of contents ------------------- */
 div.dokuwiki div.toc {
   margin-left: 1em;
