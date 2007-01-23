@@ -1,19 +1,30 @@
 <?php
 /**
- * functions for template simple 
+ * DokuWiki Template Simple Functions
  * 
- * @license:    GPL 2 (http://www.gnu.org/licenses/gpl.html)
- * @author:     Michael Klier <chi@chimeric.de>
+ * @license GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author  Michael Klier <chi@chimeric.de>
  */
 
 /**
- * prints the topbar-page
+ * Prints the topbar
  *
  * @author Michael Klier <chi@chimeric.de>
  */
 function tpl_topbar() {
-    if(file_exists(wikiFN("topbar"))) {
-        $out .= p_wiki_xhtml("topbar",'',false);
-        print($out);
+    global $ID;
+
+    $found = false;
+    $tbar  = '';
+    $path  = explode(':', $ID);
+
+    while(!$found && count($path) >= 0) {
+        $tbar = implode(':', $path) . ':' . 'topbar';
+        $found = @file_exists(wikiFN($tbar));
+        array_pop($path);
+    }
+
+    if($found && auth_quickaclcheck($tbar) >= AUTH_READ) {
+        print p_wiki_xhtml($tbar,'',false);
     }
 }
