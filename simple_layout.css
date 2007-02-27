@@ -4,10 +4,9 @@
  * @author:     Michael Klier <chi@chimeric.de>
  * @homepage:   http://www.chimeric.de
  */
-
 div.dokuwiki .header {
   padding: 0;
-  background: __header_background__;
+  background: __inner_background__;
 }
 
 div.dokuwiki .pagename {
@@ -17,11 +16,10 @@ div.dokuwiki .pagename {
 }
 
 div.dokuwiki .logo {
-  background: __heaader_background__;
   float: none;
   text-align: center;
   height: 50px;
-  padding-top: 1.5em !important;
+  padding-top: 1.1em !important;
   padding-bottom: 0.4em !important;
   padding-top: 1em;
   padding-bottom: 1.5em;
@@ -32,7 +30,7 @@ div.dokuwiki .pagename a {
 }
 
 div.dokuwiki .logo a {
-  color: __lightgray__ !important;
+  color: __logo_color__ !important;
   font-weight: normal;
   font-size: 160%;
 }
@@ -42,10 +40,19 @@ div.dokuwiki .bar {
   background: __medium__;
   margin: 0;
   padding: 0;
-  margin-top: 1em;
 }
 
 div.dokuwiki #bar__bottom {
-  border-top: 1px dashed __light__;
+  margin-top: 0.3em;
+  border-top: 1px dotted __border__;
+  padding-top: 0.3em;
   background: none;
+  margin-bottom: 0;
+}
+
+div.dokuwiki #bar__top {
+  border-bottom: 1px dotted __border__;
+  background: __page_background__;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.3em;
 }

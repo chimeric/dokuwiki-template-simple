@@ -1,5 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 /**
  * DokuWiki Default Template
@@ -18,6 +16,8 @@ if (!defined('DOKU_INC')) die();
 
 include(DOKU_TPLINC.'tpl_functions.php');
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang']?>"
  lang="<?php echo $conf['lang']?>" dir="<?php echo $lang['direction']?>">
 <head>
@@ -37,28 +37,22 @@ include(DOKU_TPLINC.'tpl_functions.php');
 <body>
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>
 <div class="dokuwiki">
-  <?php html_msgarea()?>
 
-  <div class="stylehead">
+  <b class="rtop_outer">
+    <b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b>
+  </b>
 
-    <div id="header_container">
-      <b class="rtop">
+  <div id="outer_container">
+
+    <?php html_msgarea()?>
+
+    <div class="stylehead">
+      <b class="rtop_inner">
         <b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b>
       </b>
-      <div class="header">
-        <div class="logo">
-          <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
-        </div>
-      </div>
-      <b class="rbottom">
-        <b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
-      </b>
-    </div>
 
-    <div id="navi_container">
-      <b class="rtop">
-        <b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b>
-      </b>
+      <?php tpl_searchform()?>
+
       <?php if($conf['breadcrumbs']){?>
       <div class="breadcrumbs">
         <?php tpl_breadcrumbs()?>
@@ -71,63 +65,88 @@ include(DOKU_TPLINC.'tpl_functions.php');
         <?php tpl_youarehere() ?>
       </div>
       <?php }?>
-      <div id="tpl_simple_navi">
-      <?php tpl_topbar() ?>
+
+
+      <div class="header">
+        <div class="logo">
+          <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
+        </div>
       </div>
     </div>
 
-  </div>
+    <?php flush()?>
 
-  <?php flush()?>
+    <div id="inner_container">
 
-
-  <div class="page">
-
-    <?php tpl_searchform()?>
-
-    <!-- wikipage start -->
-    <?php tpl_content()?>
-    <!-- wikipage stop -->
-
-  <div class="clearer">&nbsp;</div>
-
-  <?php flush()?>
-
-    <div class="stylefoot">
-
-      <div class="meta">
-        <div class="user">
-          <?php tpl_userinfo()?>
-        </div>
-        <div class="doc">
-          <?php tpl_pageinfo()?>
-        </div>
+      <div id="tpl_simple_navi">
+      <?php tpl_topbar() ?>
       </div>
 
-        <div class="bar" id="bar__bottom">
-          <div class="bar-left" id="bar__bottomleft">
+      <div class="page">
+
+        <div class="bar" id="bar__top">
+          <div class="bar-left" id="bar__topleft">
             <?php tpl_actionlink('edit')?>
-            <?php tpl_actionlink('recent')?>
-            <?php tpl_actionlink('backlink')?>
           </div>
-          <div class="bar-right" id="bar__bottomright">
-            <?php tpl_actionlink('subscription')?>
+          <div class="bar-right" id="bar__topright">
             <?php tpl_actionlink('history')?>
-            <?php tpl_actionlink('admin')?>
-            <?php tpl_actionlink('profile')?>
-            <?php tpl_actionlink('login')?>
-            <?php tpl_actionlink('index')?>
-            <?php tpl_actionlink('top')?>
+            <?php tpl_actionlink('subscription')?>
           </div>
           <div class="clearer"></div>
         </div>
 
-      <?php /*old includehook*/ @include(dirname(__FILE__).'/pagefooter.html')?>
-      <?php /*old includehook*/ @include(dirname(__FILE__).'/footer.html')?>
 
+
+        <!-- wikipage start -->
+        <?php tpl_content()?>
+        <!-- wikipage stop -->
+
+        <div class="clearer">&nbsp;</div>
+
+        <?php flush()?>
+
+        <div class="stylefoot">
+
+          <?php tpl_actionlink('top')?>
+
+          <div class="meta">
+            <div class="user">
+              <?php tpl_userinfo()?>
+            </div>
+            <div class="doc">
+              <?php tpl_pageinfo()?>
+            </div>
+          </div>
+
+          <div class="bar" id="bar__bottom">
+            <div class="bar-left" id="bar__bottomleft">
+              <?php tpl_actionlink('index')?>
+              <?php tpl_actionlink('recent')?>
+            </div>
+            <div class="bar-right" id="bar__bottomright">
+              <?php tpl_actionlink('admin')?>
+              <?php tpl_actionlink('profile')?>
+              <?php tpl_actionlink('login')?>
+            </div>
+            <div class="clearer"></div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
+    <?php /*old includehook*/ @include(dirname(__FILE__).'/pagefooter.html')?>
+    <?php /*old includehook*/ @include(dirname(__FILE__).'/footer.html')?>
+
+    <b class="rbottom_inner">
+      <b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
+    </b>
+
   </div>
+
+  <b class="rbottom_outer">
+    <b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
+  </b>
 
 </div>
 
