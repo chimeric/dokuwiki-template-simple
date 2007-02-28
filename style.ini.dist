@@ -24,7 +24,7 @@ print.css           = print
 
 ; additioal replacements
 __font_size__           = "0.8125em"
-__wiki_width__          = "850px"
+__wiki_width__          = "845px"
 __navi_link_width__     = "150px"
 __outer_background__    = "#636b70"
 __inner_background__    = "#636b70"
