@@ -18,7 +18,7 @@ function tpl_topbar() {
     $tbar  = '';
     $path  = explode(':', $ID);
 
-    while(!$found && count($path) >= 0) {
+    while(!$found && count($path) > 0) {
         $tbar = implode(':', $path) . ':' . 'topbar';
         $found = @file_exists(wikiFN($tbar));
         array_pop($path);

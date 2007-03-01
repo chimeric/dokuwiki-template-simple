@@ -79,7 +79,7 @@ include(DOKU_TPLINC.'tpl_functions.php');
     <div id="inner_container">
 
       <div id="tpl_simple_navi">
-      <?php tpl_topbar() ?>
+        <?php tpl_topbar() ?>
       </div>
 
       <div class="page">
