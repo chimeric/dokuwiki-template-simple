@@ -18,10 +18,12 @@ function tpl_topbar() {
     $tbar  = '';
     $path  = explode(':', $ID);
 
-    while(!$found && count($path) > 0) {
+    while(!$found && count($path) >= 0) {
         $tbar = implode(':', $path) . ':' . 'topbar';
         $found = @file_exists(wikiFN($tbar));
         array_pop($path);
+        // check if nothing was found
+        if(!$found && $tbar == ':topbar') return;
     }
 
     if($found && auth_quickaclcheck($tbar) >= AUTH_READ) {
