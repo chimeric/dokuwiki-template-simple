@@ -8,3 +8,11 @@
 div.dokuwiki form#dw__search {
   display: none;
 }
+
+div.dokuwiki div#tpl_simple_navi {
+  display: none;
+}
+
+div.dokuwiki a.action {
+  display: none;
+}
