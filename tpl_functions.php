@@ -7,7 +7,7 @@
  */
 
 /**
- * Prints the topbar
+ * Renders the topbar
  *
  * @author Michael Klier <chi@chimeric.de>
  */
