@@ -29,11 +29,13 @@ div.meta {
   text-align:right;
 }
 
-div.breadcrumbs{
-  display:none;
-}
 
-div.secedit{
+div.notify,
+div.info,
+div.success,
+div.error,
+div.breadcrumbs,
+div.secedit {
   display:none;
 }
 
@@ -230,3 +232,4 @@ table.inline td {
 }
 
 .toc, .footerinc, .header, .bar, .user {display:none}
+
