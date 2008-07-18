@@ -21,40 +21,49 @@ div.dokuwiki {
 
 div.dokuwiki div#outer_container {
   background: __outer_background__;
-  padding: 0em;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
+  padding: 0.6em;
 }
 
 div.dokuwiki div#inner_container {
   background: __inner_background__;
-  padding: 0.5em;
+  margin: 0;
+  padding-left: 8px;
 }
 
 div.dokuwiki div.page {
   padding: 1em;
   margin: 0;
+  margin-bottom: 1em;
+  width: 96% !important;
+  width: 95%;
+  margin-left: 0;
+  margin-right: 8px;
   background-color: __page_background__;
 }
 
 /* ---------- Top Navigation ----------- */
 div.dokuwiki div#tpl_simple_navi {
-  height: 2.3em;
+  margin-left: auto;
 }
 
 div.dokuwiki div#tpl_simple_navi ul {
   list-style: none;
+  float: left;
   margin: 0;
   padding: 0;
-  width: __navi_link_width__;
+}
+
+div.dokuwiki div#tpl_simple_navi ul li {
   float: left;
-  margin-right: 5px;
+  margin: 0;
+  margin-right: 0.5em;
+  width: __navi_link_width__;
+  background-color: __navi_background__;
 }
 
 div.dokuwiki div#tpl_simple_navi a {
   display: block;
   text-decoration: none;
-  background-color: __navi_background__;
   border-bottom: none;
   padding: 0.4em;
   padding-left: 0.8em;

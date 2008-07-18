@@ -66,7 +66,6 @@ include(DOKU_TPLINC.'tpl_functions.php');
       </div>
       <?php }?>
 
-
       <div class="header">
         <div class="logo">
           <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
@@ -81,6 +80,8 @@ include(DOKU_TPLINC.'tpl_functions.php');
       <div id="tpl_simple_navi">
         <?php tpl_topbar() ?>
       </div>
+
+	  <div class="clearer">&nbsp;</div>
 
       <div class="page">
 
@@ -128,11 +129,12 @@ include(DOKU_TPLINC.'tpl_functions.php');
               <?php tpl_actionlink('profile')?>
               <?php tpl_actionlink('login')?>
             </div>
-            <div class="clearer"></div>
           </div>
 
         </div>
+        <div class="clearer">&nbsp;</div>
       </div>
+      <div class="clearer">&nbsp;</div>
     </div>
 
     <?php /*old includehook*/ @include(dirname(__FILE__).'/pagefooter.html')?>

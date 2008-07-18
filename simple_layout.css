@@ -6,6 +6,7 @@
  */
 div.dokuwiki .header {
   padding: 0;
+  margin: 0;
   background: __inner_background__;
 }
 
