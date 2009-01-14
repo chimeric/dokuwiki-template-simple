@@ -32,18 +32,16 @@ div.dokuwiki div#inner_container {
 
 div.dokuwiki div.page {
   padding: 1em;
-  margin: 0;
-  margin-bottom: 1em;
+  margin: 0 8px 1em 0;
   width: 96% !important;
   width: 95%;
-  margin-left: 0;
-  margin-right: 8px;
   background-color: __page_background__;
 }
 
 /* ---------- Top Navigation ----------- */
 div.dokuwiki div#tpl_simple_navi {
   margin-left: auto;
+  height: 1.8em;
 }
 
 div.dokuwiki div#tpl_simple_navi ul {

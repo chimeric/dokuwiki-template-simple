@@ -66,11 +66,14 @@ include(DOKU_TPLINC.'tpl_functions.php');
       </div>
       <?php }?>
 
-      <div class="header">
-        <div class="logo">
-          <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
-        </div>
+	  <div class="clearer"></div>
+
+      <div class="logo">
+        <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
+
+	  <div class="clearer"></div>
+
     </div>
 
     <?php flush()?>

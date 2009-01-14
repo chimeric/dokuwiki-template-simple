@@ -4,43 +4,24 @@
  * @author:     Michael Klier <chi@chimeric.de>
  * @homepage:   http://www.chimeric.de
  */
-div.dokuwiki .header {
-  padding: 0;
-  margin: 0;
-  background: __inner_background__;
-}
-
-div.dokuwiki .pagename {
-  font-weight: bold;
-  color: __darker__;
-  font-size: 130%;
-}
-
 div.dokuwiki .logo {
-  float: none;
+  float: none !important;
   text-align: center;
-  height: 50px;
-  padding-top: 1.1em !important;
-  padding-bottom: 0.4em !important;
-  padding-top: 1em;
-  padding-bottom: 1.5em;
-}
-
-div.dokuwiki .pagename a {
-  color: __dark__ !important;
+  margin-bottom: 0.8em;
 }
 
 div.dokuwiki .logo a {
+  float: none !important;
   color: __logo_color__ !important;
-  font-weight: normal;
-  font-size: 160%;
+  font-weight: normal !important;
+  font-size: 40px;
+  line-height: 200%;
 }
 
 div.dokuwiki .bar {
   border: none;
   background: __medium__;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
 }
 
 div.dokuwiki #bar__bottom {
