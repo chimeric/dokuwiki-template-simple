@@ -92,6 +92,11 @@ include(DOKU_TPLINC.'tpl_functions.php');
 
         <div class="bar" id="bar__top">
           <div class="bar-left" id="bar__topleft">
+		    <?php
+            if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) {
+                $npd->html_new_page_button();
+            }
+			?>
             <?php tpl_actionlink('edit')?>
           </div>
           <div class="bar-right" id="bar__topright">

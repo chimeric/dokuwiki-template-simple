@@ -318,7 +318,8 @@ div.dokuwiki a.recent {
 }
 
 div.dokuwiki a.create,
-div.dokuwiki a.edit {
+div.dokuwiki a.edit,
+div.dokuwiki a.npd {
   background: transparent url(images/tool-edit.png) 0px 1px no-repeat;
   padding: 1px 0px 1px 18px;
 }
