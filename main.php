@@ -8,8 +8,10 @@
  * You should leave the doctype at the very top - It should
  * always be the very first line of a document.
  *
- * @link   http://wiki.splitbrain.org/wiki:tpl:templates
  * @author Andreas Gohr <andi@splitbrain.org>
+ * @author Michael Klier <chi@chimeric.de>
+ * @link   http://dokuwiki.org/template:simple
+ * @link   http://chimeric.de/projects/dokuwiki/template/simple
  */
 // must be run from within DokuWiki
 if (!defined('DOKU_INC')) die();
@@ -66,13 +68,13 @@ include(DOKU_TPLINC.'tpl_functions.php');
       </div>
       <?php }?>
 
-	  <div class="clearer"></div>
+      <div class="clearer"></div>
 
       <div class="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
 
-	  <div class="clearer"></div>
+      <div class="clearer"></div>
 
     </div>
 
@@ -84,7 +86,7 @@ include(DOKU_TPLINC.'tpl_functions.php');
         <?php tpl_topbar() ?>
       </div>
 
-	  <div class="clearer">&nbsp;</div>
+      <div class="clearer"></div>
 
       <div class="page">
 
@@ -152,6 +154,10 @@ include(DOKU_TPLINC.'tpl_functions.php');
   <b class="rbottom_outer">
     <b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
   </b>
+
+  <div class="license">
+    <?php tpl_license(false)?>
+  </div>
 
 </div>
 

@@ -38,3 +38,8 @@ div.dokuwiki #bar__top {
   margin-bottom: 1.5em;
   padding-bottom: 0.3em;
 }
+
+div.dokuwiki div.license {
+  margin-top: 0.5em;
+  text-align: center;
+}
