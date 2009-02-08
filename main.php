@@ -160,10 +160,6 @@ include(DOKU_TPLINC.'tpl_functions.php');
     <b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b>
   </b>
 
-  <div class="license">
-    <?php tpl_license(false)?>
-  </div>
-
 </div>
 
 <div class="no"><?php /* provide DokuWiki housekeeping, required in all templates */ tpl_indexerWebBug()?></div>

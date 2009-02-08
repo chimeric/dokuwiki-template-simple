@@ -39,7 +39,13 @@ div.dokuwiki #bar__top {
   padding-bottom: 0.3em;
 }
 
-div.dokuwiki div.license {
-  margin-top: 0.5em;
-  text-align: center;
+div.dokuwiki div.footerinc div.license {
+  display: inline;
+  padding: 0;
+  font-size: 100%;
+}
+
+div.dokuwiki div.footerinc div.license img {
+  float: none;
+  margin: 0;
 }
