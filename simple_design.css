@@ -12,6 +12,10 @@ body {
   font-size: __font_size__;
 }
 
+* html body {
+  behavior: url("csshover3.htc"); /* fix csshover behavior for IE6 */
+}
+
 div.dokuwiki {
   line-height: 160%;
   width: __wiki_width__;
