@@ -41,7 +41,7 @@ HTML=$(DIST_DIR)/footer.html \
 
 # {{{ HTC
 HTC=$(DIST_DIR)/csshover3.htc \
-zsh: command not found: s
+# }}}
 
 # {{{ IMAGES
 IMAGES=$(DIST_DIR)/images/bullet.gif \
