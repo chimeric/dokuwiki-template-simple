@@ -39,6 +39,10 @@ PHP=$(DIST_DIR)/detail.php \
 HTML=$(DIST_DIR)/footer.html \
 # }}}
 
+# {{{ HTC
+HTC=$(DIST_DIR)/csshover3.htc \
+zsh: command not found: s
+
 # {{{ IMAGES
 IMAGES=$(DIST_DIR)/images/bullet.gif \
 	   $(DIST_DIR)/images/button-cc.gif \
@@ -75,7 +79,7 @@ IMAGES=$(DIST_DIR)/images/bullet.gif \
 	   $(DIST_DIR)/images/windows.gif
 # }}}
 
-DIST_FILES= $(DOCS) $(CSS) $(HTML) $(PHP) $(STYLE_INI) $(IMAGES)
+DIST_FILES= $(DOCS) $(CSS) $(HTML) $(PHP) $(STYLE_INI) $(IMAGES) $(HTC)
 
 dist:
 	tar czf $(DIST_NAME).tgz $(DIST_FILES)
